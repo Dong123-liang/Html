@@ -1,0 +1,51 @@
+<html>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+        margin-left: 25px;
+        height: 52px;
+        width: 100%;
+        background-color: #fff;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .box ul>li{ 
+            border-bottom: 2px solid black;
+            border-radius:2px;
+        }
+        .nav ul li a {
+      padding: 0 14px;
+      height: 52px;
+      display: block;
+      color: #8590a6;
+      font-weight: 15px;
+      cursor: pointer;
+      line-height: 52px;
+    }
+    li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #000;
+    transition: 0.2s all linear;
+}
+    </style>
+    <div class="box">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+            
+        </div>
+</html>
