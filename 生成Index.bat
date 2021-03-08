@@ -50,7 +50,7 @@ echo     ^</html^> >> %~dp0temp.txt
 SetLocal EnableDelayedExpansion
 Set File=%~dp0temp.txt
 Set Str=%~dp0
-Set Replace=http://dong123.github.io/Html/
+Set Replace=http://dong123-liang.github.io/Html/
 Set File=%File:"=%
 For /F "Usebackq Delims=" %%i In ("%File%") Do (
     Set "Line=%%i"
